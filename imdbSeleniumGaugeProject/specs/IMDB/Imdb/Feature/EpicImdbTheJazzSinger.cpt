@@ -1,0 +1,45 @@
+Created by emredenli on 30.01.2023
+
+This is a concept file with following syntax for each concept.
+# The Jazz Singer - Gelen URL ile istenen URL eşitliği kontrol edilir
+* "https://www.imdb.com/" gelen url ile aynı mı
+
+# The Jazz Singer - Menü butonunun tıklanabilir olması kontrol edilir ve tıklanır
+* "imdbHeader-navDrawerOpen" - "id" elementine tıklanır
+
+# The Jazz Singer - Award & Events altındaki Oscars butonunun tıklanabilir olması kontrol edilir ve tıklanır
+* "//span[text()='Oscars']" - "xpath" elementinin görünür olması kontrol edilir
+* "//span[text()='Oscars']" - "xpath" elementine tıklanır
+
+# The Jazz Singer - Event History altındaki 1929 değerinin tıklanabilir olması kontrol edilir ve tıklanır
+* "//a[text()='1929']" - "xpath" elementine scroll yapılır
+* "//a[text()='1929']" - "xpath" elementine tıklanır
+
+# The Jazz Singer - Best Writing, Adaptation altındaki The Jazz Singer seçilir
+* "//div[text()='Best Writing, Adaptation']//..//a[text()='The Jazz Singer']" - "xpath" elementine scroll yapılır
+* "//div[text()='Best Writing, Adaptation']//..//a[text()='The Jazz Singer']" - "xpath" elementine tıklanır
+
+# The Jazz Singer - Gelen ekranda Director, Writer ve Star değerleri kaydedilir
+* Director değerlerini diziye yaz
+* Writer değerlerini diziye yaz
+* Star değerlerini diziye yaz
+
+# The Jazz Singer - IMDb butonunun tıklanabilir olması kontrol edilir ve tıklanır
+* "home_img_holder" - "id" elementine tıklanır
+
+# The Jazz Singer - Arama çubuğuna The Jazz Singer değeri yazılır
+* "suggestion-search" - "id" elementine "The Jazz Singer" değerini yaz
+
+# The Jazz Singer - Sonuçlar arasında The Jazz Singer değerinin tıklanabilir olması kontrol edilir ve tıklanır
+* "(//a[@data-testid='search-result--const']//div)[3]//div[text()='The Jazz Singer']" - "xpath" elementinin görünür olması kontrol edilir
+* "(//a[@data-testid='search-result--const']//div)[3]//div[text()='The Jazz Singer']" - "xpath" elementine tıklanır
+
+# The Jazz Singer - Gelen ekranda Director, Writer ve Star değerleriyle eşit olup olmadığı kontrol edilir
+* Director değerlerini karşılaştır
+* Writer değerlerini karşılaştır
+* Star değerlerini karşılaştır
+
+# The Jazz Singer - Fotoğrafların linklerinin kırık olmadığı kontrol edilir
+* "div[data-testid='photos-title'] div a" - "cssSelector" elementine scroll yapılır
+* "div[data-testid='photos-title'] div a" - "cssSelector" elementine tıklanır
+* Broken image link control

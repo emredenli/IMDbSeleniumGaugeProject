@@ -1,0 +1,45 @@
+Created by emredenli on 30.01.2023
+
+This is a concept file with following syntax for each concept.
+# The Circus - Gelen URL ile istenen URL eşitliği kontrol edilir
+* "https://www.imdb.com/" gelen url ile aynı mı
+
+# The Circus - Menü butonunun tıklanabilir olması kontrol edilir ve tıklanır
+* "imdbHeader-navDrawerOpen" - "id" elementine tıklanır
+
+# The Circus - Award & Events altındaki Oscars butonunun tıklanabilir olması kontrol edilir ve tıklanır
+* "//span[text()='Oscars']" - "xpath" elementinin görünür olması kontrol edilir
+* "//span[text()='Oscars']" - "xpath" elementine tıklanır
+
+# The Circus - Event History altındaki 1929 değerinin tıklanabilir olması kontrol edilir ve tıklanır
+* "//a[text()='1929']" - "xpath" elementine scroll yapılır
+* "//a[text()='1929']" - "xpath" elementine tıklanır
+
+# The Circus - Honorary Award altındaki The Circus seçilir
+* "//div[text()='Honorary Award']//..//a[text()='The Circus']" - "xpath" elementine scroll yapılır
+* "//div[text()='Honorary Award']//..//a[text()='The Circus']" - "xpath" elementine tıklanır
+
+# The Circus - Gelen ekranda Director, Writer ve Star değerleri kaydedilir
+* Director değerlerini diziye yaz
+* Writer değerlerini diziye yaz
+* Star değerlerini diziye yaz
+
+# The Circus - IMDb butonunun tıklanabilir olması kontrol edilir ve tıklanır
+* "home_img_holder" - "id" elementine tıklanır
+
+# The Circus - Arama çubuğuna The Circus değeri yazılır
+* "suggestion-search" - "id" elementine "The Circus" değerini yaz
+
+# The Circus - Sonuçlar arasında The Circus değerinin tıklanabilir olması kontrol edilir ve tıklanır
+* "(//a[@data-testid='search-result--const']//div)[3]//div[text()='The Circus']" - "xpath" elementinin görünür olması kontrol edilir
+* "(//a[@data-testid='search-result--const']//div)[3]//div[text()='The Circus']" - "xpath" elementine tıklanır
+
+# The Circus - Gelen ekranda Director, Writer ve Star değerleriyle eşit olup olmadığı kontrol edilir
+* Director değerlerini karşılaştır
+* Writer değerlerini karşılaştır
+* Star değerlerini karşılaştır
+
+# The Circus - Fotoğrafların linklerinin kırık olmadığı kontrol edilir
+* "div[data-testid='photos-title'] div a" - "cssSelector" elementine scroll yapılır
+* "div[data-testid='photos-title'] div a" - "cssSelector" elementine tıklanır
+* Broken image link control
